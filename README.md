@@ -7,11 +7,14 @@ Usage: node liri concert-this <artist/band name here> ||
                  movie-this <movie name here> ||
                  do-what-it-says 
 
-concert-this: search for artist's/band's concert schedule by sending request to Bands In Town api through axios module.
-spotify-this-song: search for information on the song through Spotify api with node-spotify-api. If no song name given, 
+* concert-this: search for artist's/band's concert schedule by sending request to Bands In Town api through axios module.
+
+* spotify-this-song: search for information on the song through Spotify api with node-spotify-api. If no song name given, 
                   search for "The sign"
-movie-this: search for information about the movie through OMDB api. If no movie title given, search for "Mr. Nobody"
-do-what-it-says: Runs the command and input written in random.txt file. File name has to be random.txt and should be in the same
+                  
+* movie-this: search for information about the movie through OMDB api. If no movie title given, search for "Mr. Nobody"
+
+* do-what-it-says: Runs the command and input written in random.txt file. File name has to be random.txt and should be in the same
                  location with liri.js. 
                  
 ### Prerequisites
