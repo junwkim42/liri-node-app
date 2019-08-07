@@ -1,10 +1,12 @@
 # liri-node-app
 
 Command-Line bot for searching concert info, songs, movie info and reading commands from .txt file!
-Usage: node liri concert-this <artist/band name here>
-                 spotify-this-song <song name here>
-                 movie-this <movie name here>
-                 do-what-it-says
+
+Usage: node liri concert-this <artist/band name here> || 
+                 spotify-this-song <song name here> ||
+                 movie-this <movie name here> ||
+                 do-what-it-says 
+  
 ### Prerequisites
 ```
 npm install
@@ -29,3 +31,7 @@ SPOTIFY_SECRET=YOUR_SPOTIFY_SECRET
 ```
 If you don't have these yet, you can get them by signing up for spotify web development api and creating an app. (https://developer.spotify.com/documentation/web-api/)
 
+### Tests
+![testimg](https://i.imgur.com/CKJBn16.gif)
+### Author
+Scott Kim
