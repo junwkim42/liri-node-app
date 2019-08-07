@@ -7,7 +7,7 @@ var spotify = new Spotify( keys.spotify );
 var fs = require("fs");
 
 
-if(!process.argv[2] || (!process.argv[3] && process.argv[2] != 'do-what-it-says')){ 
+if(!process.argv[2] || (!process.argv[3] && process.argv[2] == 'concert-this')){ 
     console.log(`Usage: node liri concert-this <artist/band name here>`);
     console.log(`                 spotify-this-song <song name here>`);
     console.log(`                 movie-this <movie name here>`);
@@ -33,6 +33,10 @@ function liribot(){
         });
     }
     else if (order == "spotify-this-song"){
+        if (searchSubject == "" || !searchSubject){
+            searchSubject = "The+Sign";
+            searchKey = "The Sign";
+        }
         console.log(`Searching for ${searchKey}`);
         /* Artist(s)
         The song's name
@@ -49,6 +53,10 @@ function liribot(){
             });
     }
     else if (order == "movie-this"){
+        if (searchSubject == "" || !searchSubject){
+            searchSubject = "Mr.+Nobody";
+            searchKey = "Mr. Nobody";
+        }
         /* Title of the movie.
         * Year the movie came out.
         * IMDB Rating of the movie.
